@@ -41,14 +41,14 @@ class SplashActivity : AppCompatActivity() {
                             startActivity(Intent(this@SplashActivity, DashboardUserActivity::class.java))
                             finish()
                         }
-                        else if (userType == "admin "){
+                        else if (userType == "admin"){
                             startActivity(Intent(this@SplashActivity, DashboardAdminActivity::class.java))
                             finish()
                         }
                     }
 
                     override fun onCancelled(error: DatabaseError) {
-                        TODO("Not yet implemented")
+
                     }
 
                 })
