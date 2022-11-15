@@ -17,6 +17,8 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var progressDialog : ProgressDialog
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
@@ -50,7 +52,7 @@ class RegisterActivity : AppCompatActivity() {
     private fun validateData() {
         name = binding.nameEt.text.toString().trim()
         email = binding.emailEt.text.toString().trim()
-        password = binding.passwordEt.toString().trim()
+        password = binding.passwordEt.text.toString().trim()
         val cPassword = binding.cPasswordEt.text.toString().trim()
 
         if (name.isEmpty()){
@@ -61,12 +63,13 @@ class RegisterActivity : AppCompatActivity() {
             Toast.makeText(this, "Enter password....", Toast.LENGTH_SHORT).show()
         } else if (cPassword.isEmpty()){
             Toast.makeText(this, "Confirm password....", Toast.LENGTH_SHORT).show()
-        } else if (password != cPassword){
+        } else if (password != cPassword){// e nghĩ nó lỗi ở đoạn này
             Toast.makeText(this, "Password doesn't match....", Toast.LENGTH_SHORT).show()
         } else{
             createUserAccount()
         }
     }
+
 
     private fun createUserAccount() {
         progressDialog.setMessage("Creating Account...")
