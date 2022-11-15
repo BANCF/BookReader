@@ -63,7 +63,7 @@ class RegisterActivity : AppCompatActivity() {
             Toast.makeText(this, "Enter password....", Toast.LENGTH_SHORT).show()
         } else if (cPassword.isEmpty()){
             Toast.makeText(this, "Confirm password....", Toast.LENGTH_SHORT).show()
-        } else if (password != cPassword){// e nghĩ nó lỗi ở đoạn này
+        } else if (password != cPassword){
             Toast.makeText(this, "Password doesn't match....", Toast.LENGTH_SHORT).show()
         } else{
             createUserAccount()

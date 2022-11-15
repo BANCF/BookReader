@@ -41,7 +41,7 @@ class SplashActivity : AppCompatActivity() {
                             startActivity(Intent(this@SplashActivity, DashboardUserActivity::class.java))
                             finish()
                         }
-                        else if (userType == "admin"){
+                        else if (userType == "abcd"){ // sửa abcd thành admin - trên firebase nữa
                             startActivity(Intent(this@SplashActivity, DashboardAdminActivity::class.java))
                             finish()
                         }
