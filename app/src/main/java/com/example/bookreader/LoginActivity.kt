@@ -83,7 +83,7 @@ class LoginActivity : AppCompatActivity() {
                         startActivity(Intent(this@LoginActivity, DashboardUserActivity::class.java))
                         finish()
                     }
-                    else if (userType == "abcd "){ // sửa abcd thành admin
+                    else if (userType == "admin"){ // sửa abcd thành admin
                         startActivity(Intent(this@LoginActivity, DashboardAdminActivity::class.java))
                         finish()
                     }
