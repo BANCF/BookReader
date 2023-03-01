@@ -1,4 +1,4 @@
-package com.example.bookreader
+package com.example.bookreader.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -20,7 +20,7 @@ class DashboardUserActivity : AppCompatActivity() {
 
         binding.logoutBtn.setOnClickListener {
             firebaseAuth.signOut()
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
     }

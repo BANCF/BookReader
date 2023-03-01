@@ -1,20 +1,17 @@
-package com.example.bookreader
+package com.example.bookreader.Activities
 
-import android.app.Application
 import android.app.ProgressDialog
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultCallback
-import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
+import com.example.bookreader.ModelCategory
 import com.example.bookreader.databinding.ActivityPdfAddBinding
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
