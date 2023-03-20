@@ -185,6 +185,7 @@ class PdfEditActivity : AppCompatActivity() {
                 categoryIdArrayList.clear()
 
                 for(ds in snapshot.children){
+
                     val id = "${ds.child("id").value}"
                     val category = "${ds.child("category").value}"
 

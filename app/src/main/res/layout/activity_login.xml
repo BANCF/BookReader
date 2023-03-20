@@ -113,7 +113,7 @@
     </ScrollView>
 
 
-    <!--NoAccount-->
+    <!--NoAccount Sign Up-->
     <TextView
         android:id="@+id/noAccountTv"
         android:layout_alignParentBottom="true"

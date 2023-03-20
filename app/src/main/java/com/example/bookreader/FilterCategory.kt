@@ -20,11 +20,12 @@ class FilterCategory: Filter {
             constraint= constraint.toString().uppercase()
             val filterModels : ArrayList<ModelCategory> = ArrayList()
 
-            for (i in 0 until filterList.size){
+              for (i in 0 until filterList.size){
                 if (filterList[i].category.uppercase().contains(constraint)){
                     filterModels.add(filterList[i])
                 }
             }
+
                 results.count = filterModels.size
                 results.values = filterModels
         }

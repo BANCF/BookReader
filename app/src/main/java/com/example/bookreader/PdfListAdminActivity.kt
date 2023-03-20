@@ -36,7 +36,7 @@ class PdfListAdminActivity : AppCompatActivity() {
          binding = ActivityPdfListAdminBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//         get from intent, that i passed from adapter
+         // get from intent, that i passed from adapter
         val intent = intent
         categoryId = intent.getStringExtra("categoryId")!!
         category = intent.getStringExtra("category")!!
@@ -51,6 +51,12 @@ class PdfListAdminActivity : AppCompatActivity() {
          binding.searchEt.addTextChangedListener(object : TextWatcher{
              override fun beforeTextChanged(p0: CharSequence?, p1:Int, p2:Int, p3:Int) {
 
+//                 try {
+//                     adapterPdfAdmin.filter.filter(searchEvent.toString())
+//                 }
+//                 catch (e : Exception){
+//                     Log.d(TAG, "Failed to filter: ${e.message}")
+//                 }
              }
 
              override fun onTextChanged(s: CharSequence,p1:Int, p2:Int, p3:Int) {
